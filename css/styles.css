@@ -342,6 +342,11 @@ padding: 0 15px;
     padding: 32px 0px;
 }
 
+.social-networks {
+    justify-content:center;
+    margin-right: auto;
+    margin-left: auto;
+}
 .member-network-bg {
     display: inline-block;
     padding: 0;
@@ -352,12 +357,12 @@ padding: 0 15px;
     border-radius: 50%;
 
     margin-top: 12px;
-    margin-right: 24px;
 }
 
-a.member-network-bg:not(:last-child) {
+.member-network-bg:not(:last-child) {
     margin-right: 24px;
   }
+
 
 .icon-network {
     width: 16px;
@@ -365,6 +370,28 @@ a.member-network-bg:not(:last-child) {
 }
 /* .heading is in "what we a doing" 
 .item-title is in "motto (hidden h2)*/
+
+/* customers */
+.section.customers {
+    padding-top: 120px;
+}
+
+.company {
+    padding: 0;
+    border: none;
+    padding: 16px 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.company:not(:last-child) {
+    margin-right: 24px;
+  }
+
+.icon-company {
+width: 104px;
+height: 56px;
+  }
 
 
 
