@@ -574,6 +574,8 @@ fill: #8E8F99
     border-radius: 50%;
 }
 
+.member-network-bg:hover,
+.member-network-bg:focus,
 .icon-network-bg:hover,
 .icon-network-bg:focus {
     background: var(--hover-for-footer-netwoks);
