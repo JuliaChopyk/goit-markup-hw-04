@@ -193,6 +193,8 @@ border-radius: 0px 0px 4px 4px;
 .hero {
     padding: 192px 0;
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: var(--dark-background-color) ;
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/people-office.jpg);
@@ -568,15 +570,20 @@ color: #8E8F99;
     color: var(--text-color-for-headers-on-dark-background);
 }
 
+.network-item {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-for-footer-networks)  ;
+    border-radius: 50%;
+}
+
 .icon-network-bg {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-    border: none;
-    width: 40px;
-    height: 40px;
-    background-color: var(--bg-for-footer-networks)  ;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -587,7 +594,7 @@ color: #8E8F99;
     background: var(--hover-for-footer-netwoks);
 }
 
-a.icon-network-bg:not(:last-child) {
+.network-item:not(:last-child) {
     margin-right: 24px;
   }
 
