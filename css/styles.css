@@ -22,6 +22,8 @@ html {
     --secondary-button-text:#4D5AE5;
     --accent-color: #4D5AE5;
     --text-color-general-on-dark-background: #E7E9FC;
+    --bg-for-footer-networks: rgba(255, 255, 255, 0.1);
+    --hover-for-footer-netwoks: #31D0AA;
 }
 
 body {
@@ -347,8 +349,11 @@ padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
 }
+
 .member-network-bg {
-    display: inline-block;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     padding: 0;
     border: none;
     width: 40px;
@@ -356,10 +361,12 @@ padding: 0 15px;
     background-color: var(--accent-color);
     border-radius: 50%;
 
-    margin-top: 12px;
 }
 
-.member-network-bg:not(:last-child) {
+.social-networks .member-network-li {
+    margin-top: 12px;
+}
+.social-networks .member-network-li:not(:last-child) {
     margin-right: 24px;
   }
 
@@ -376,17 +383,21 @@ padding: 0 15px;
     padding-top: 120px;
 }
 
-.company {
-    padding: 0;
-    border: none;
-    padding: 16px 32px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
 
 .company:not(:last-child) {
     margin-right: 24px;
   }
+
+.icon-company-bg {
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+padding: 15px 31px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+
+}
 
 .icon-company {
 width: 104px;
@@ -510,21 +521,39 @@ height: 56px;
 
  /* Social media */
 .icon-network-bg {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: none;
     width: 40px;
     height: 40px;
-    background-color:  rgba(255, 255, 255, 0.1);
+    background-color: var(--bg-for-footer-networks)  ;
     border-radius: 50%;
+}
 
-    margin-top: 12px;
-    margin-right: 24px;
+.icon-network-bg:hover {
+    background: var(--hover-for-footer-netwoks);
+}
+
+.footer-networks {
+    margin-left: 120px;
+}
+
+.white-text-social-media {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color-for-headers-on-dark-background);
 }
 
 a.icon-network-bg:not(:last-child) {
     margin-right: 24px;
   }
+
+
 
 .icon-network-bg .icon-network {
     width: 24px;
