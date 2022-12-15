@@ -426,7 +426,7 @@ border-radius: 4px;
 
 .icon-company:hover,
 .icon-company:focus {
-    fill: var(--accent-color)
+    fill: currentColor
 }
 
 
