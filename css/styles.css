@@ -472,6 +472,9 @@ height: 88px;
 }
 
 .btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -496,10 +499,7 @@ height: 88px;
 .btn-close:hover,
 .btn-close:focus {
     background-color: var(--pressed-primary-button);
-<<<<<<< Updated upstream
     fill:#fff;
-=======
->>>>>>> Stashed changes
 }
 
 
