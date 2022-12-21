@@ -496,7 +496,10 @@ height: 88px;
 .btn-close:hover,
 .btn-close:focus {
     background-color: var(--pressed-primary-button);
+<<<<<<< Updated upstream
     fill:#fff;
+=======
+>>>>>>> Stashed changes
 }
 
 
