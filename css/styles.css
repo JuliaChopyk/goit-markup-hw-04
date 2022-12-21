@@ -595,6 +595,11 @@ height: 88px;
     color: var(--text-color-for-headers)
 }
 
+.portfolio-element:hover .img-overlay,
+.portfolio-element:focus .img-overlay {
+        transform: translateY(0);
+}
+
 .img-portfolio {
 
     position: relative;
@@ -605,12 +610,6 @@ height: 88px;
 
 
 }
-
-.img-portfolio:hover .img-overlay, 
-.img-portfolio:focus .img-overlay {
-    transform: translateY(0);
-}
-
 
 .img-overlay {
 
